@@ -1,0 +1,12 @@
+com\demoshop\tests\RemoveFromCartTest.class
+com\demoshop\tests\SearchTest.class
+com\demoshop\tests\RegisterationTest.class
+com\demoshop\tests\ExcelRegisterationTest.class
+com\demoshop\tests\AddToCartTest.class
+com\demoshop\tests\BaseTest.class
+com\demoshop\tests\SubscriptionTest.class
+com\demoshop\tests\E2ECheckoutTest.class
+com\demoshop\tests\LoginTest.class
+com\demoshop\tests\RegisterationDP2.class
+com\demoshop\tests\RegisterationDP.class
+com\demoshop\tests\LoginTest2.class

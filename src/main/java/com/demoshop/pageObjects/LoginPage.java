@@ -64,8 +64,9 @@ public class LoginPage extends PageActions {
 	}
 	
 	public void login(String email, String pass) {
-		emailInput.sendKeys(email);
-        passwordInput.sendKeys(pass);
+		setTextBox(emailInput,email );
+		setTextBox(passwordInput,pass );
+        
         clickElement(loginBtn);
 	}
 	

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<test name="Search Test">
+		<parameter name="browserName" value="Chrome"></parameter>
+		<classes>
+			<class name="com.demoshop.tests.SearchTest" />
+		</classes>
+	</test>
+	<test name="DataProviderRegisteration">
+			<parameter name="browserName" value="Edge"></parameter>
+		<classes>
+			<class name="com.demoshop.tests.RegisterationDP" />
+		</classes>
+	</test>
+
+	<test name="Registeration Test">
+		<parameter name="browserName" value="Edge"></parameter>
+		<classes>
+			<class name="com.demoshop.tests.RegisterationTest" />
+		</classes>
+	</test>
+
+	<test name="Excel Registeration">
+		<parameter name="browserName" value="Firefox"></parameter>
+		<classes>
+			<class name="com.demoshop.tests.ExcelRegisterationTest" />
+
+		</classes>
+	</test>
+
+	<test name="Rg DP2">
+		<parameter name="browserName" value="Firefox"></parameter>
+		<classes>
+			<class name="com.demoshop.tests.RegisterationDP2" />
+		</classes>
+	</test>
+
+	<test name="Login Test">
+		<parameter name="browserName" value="Chrome"></parameter>
+		<classes>
+			<class name="com.demoshop.tests.LoginTest" />
+		</classes>
+	</test>
+	
+	<test name="Subscription Test">
+		<classes>
+			<class name="com.demoshop.tests.SubscriptionTest" />
+		</classes>
+	</test>
+	
+		<test name="E2E Test">
+		<classes>
+			<class name="com.demoshop.tests.E2ECheckoutTest" />
+		</classes>
+	</test>
+</suite>

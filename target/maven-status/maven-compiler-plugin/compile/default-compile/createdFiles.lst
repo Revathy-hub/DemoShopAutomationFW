@@ -1,0 +1,14 @@
+com\demoshop\utils\ExcelReader.class
+com\demoshop\Listners\ReportListener.class
+com\demoshop\utils\TestProperties.class
+com\demoshop\utils\PageActions.class
+com\demoshop\pageObjects\CartElementsPage.class
+model\Person.class
+com\demoshop\utils\DataUtils.class
+com\demoshop\utils\UniqueGenerator.class
+com\demoshop\context\Constants.class
+com\demoshop\pageObjects\CheckoutPage.class
+com\demoshop\pageObjects\LoginPage.class
+com\demoshop\pageObjects\Productspage.class
+com\demoshop\pageObjects\RegisterPage.class
+com\demoshop\utils\ReportUtil.class

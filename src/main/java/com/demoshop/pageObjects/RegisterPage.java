@@ -43,13 +43,13 @@ public class RegisterPage extends PageActions {
 	private WebElement logoutBtn;
 	
 	public void setUserData(String fName, String lName, String emailVal, String passVal) {
-		genderMale.click();
-		firstName.sendKeys(fName);
-		lastName.sendKeys(lName);
-		email.sendKeys(emailVal);
-		password.sendKeys(passVal);
-		confirmPassword.sendKeys(passVal);
-		registerBtn.click();
+		clickElement(genderMale);
+		setTextBox(firstName,fName );
+		setTextBox(lastName,lName );
+		setTextBox(email,emailVal);
+		setTextBox(password,passVal );
+		setTextBox(confirmPassword,passVal );
+		clickElement(registerBtn);
 	}
 	public void logout() {
 		clickElement(logoutBtn);

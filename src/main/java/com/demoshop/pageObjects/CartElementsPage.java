@@ -28,10 +28,10 @@ public CartElementsPage(WebDriver driver) {
 	@FindBy(xpath="//*[@class='order-summary-content']")
 	private WebElement orderSummaryMsg;
 
-	@FindBy(xpath="//*[@class='country-input valid']")
-	private WebElement countrySelector;
-
-    @FindBy(xpath="//*[@id='StateProvinceId']")
+	
+	
+	
+	@FindBy(xpath="//*[@id='StateProvinceId']")
 	private WebElement StateProvinceId;
 
     
@@ -47,8 +47,11 @@ public CartElementsPage(WebDriver driver) {
 
     @FindBy(xpath="//*[@id='checkout']")
   	private WebElement checkOutBtn;
-  
-	public void removeProduct() {
+    
+    @FindBy(xpath="//*[@class='address-select valid']")
+    private WebElement billingAddressSelector;
+    
+    public void removeProduct() {
 		clickElement(removeBtn);
 		clickElement(updateCartBtn);
 	}
@@ -56,19 +59,20 @@ public CartElementsPage(WebDriver driver) {
 		String msg=getElementText(orderSummaryMsg ); 
 		return msg;
 	}
+	public void checkout() {
+		clickElement(agreeBtn);
+		clickElement(checkOutBtn);
+	}
 	
 	
-	
-	public void countrySelector() {
-		
-		WebElement dropdown=countrySelector;
+	public void addressSelector() {
+		clickElement(billingAddressSelector);
+		WebElement dropdown=billingAddressSelector;
 		Select staticDropdown= new Select(dropdown);
 		staticDropdown.selectByVisibleText("India");
 		
 		}
-	
-	
-	
+//
 }
 
 
