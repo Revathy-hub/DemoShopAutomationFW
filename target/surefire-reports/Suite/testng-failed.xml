@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.demoshop.Listners.ReportListener"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Rg DP2(failed)" verbose="0">
+    <classes>
+      <class name="com.demoshop.tests.RegisterationDP2">
+        <methods>
+          <include name="initDriver"/>
+          <include name="verifyUserIsAbleToMultipleRegisterUsingCorrectCreds" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.demoshop.tests.RegisterationDP2 -->
+    </classes>
+  </test> <!-- Rg DP2(failed) -->
+  <test thread-count="5" parallel="tests" name="Subscription Test(failed)" verbose="0">
+    <classes>
+      <class name="com.demoshop.tests.SubscriptionTest">
+        <methods>
+          <include name="verifyUserIsAbleToSubscribeWithValidEmail"/>
+          <include name="initDriver"/>
+        </methods>
+      </class> <!-- com.demoshop.tests.SubscriptionTest -->
+    </classes>
+  </test> <!-- Subscription Test(failed) -->
+  <test thread-count="5" parallel="tests" name="E2E Test(failed)" verbose="0">
+    <classes>
+      <class name="com.demoshop.tests.E2ECheckoutTest">
+        <methods>
+          <include name="verifyNewUserRegistersAndCheckoutProduct"/>
+          <include name="initDriver"/>
+        </methods>
+      </class> <!-- com.demoshop.tests.E2ECheckoutTest -->
+    </classes>
+  </test> <!-- E2E Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
