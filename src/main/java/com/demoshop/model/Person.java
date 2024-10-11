@@ -1,4 +1,4 @@
-package model;
+package com.demoshop.model;
 
 public class Person {
 	public String fName, lName, email, password, confirmPassword;
