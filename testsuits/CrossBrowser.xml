@@ -16,7 +16,7 @@
 	</test>
 
 	<test name="Registeration Test">
-		<parameter name="browserName" value="Edge"></parameter>
+		<parameter name="browserName" value="chrome"></parameter>
 		<classes>
 			<class name="com.demoshop.tests.RegisterationTest" />
 		</classes>

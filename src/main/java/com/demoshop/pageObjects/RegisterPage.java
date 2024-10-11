@@ -39,7 +39,7 @@ public class RegisterPage extends PageActions {
 	@FindBy(id="register-button")
 	private WebElement registerBtn;
 	
-	@FindBy(css = ".co-logout")
+	@FindBy(css = ".ico-logout")
 	private WebElement logoutBtn;
 	
 	public void setUserData(String fName, String lName, String emailVal, String passVal) {

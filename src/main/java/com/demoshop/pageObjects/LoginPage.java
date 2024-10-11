@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.demoshop.utils.PageActions;
-
+import com.demoshop.utils.WaitUtils;
 public class LoginPage extends PageActions {
 
 	private WebDriver driver;
@@ -74,13 +74,14 @@ public class LoginPage extends PageActions {
 		return getElementText(loggedEmail);
 	}
 	
-	public String verifyNewsLetterEmail(String uniqueEmail) throws InterruptedException {
+	public String verifyNewsLetterEmail(String uniqueEmail, String expectedText) throws InterruptedException {
 		//newsLetterEmail.sendKeys(uniqueEmail);
 		setTextBox(newsLetterEmail, uniqueEmail);
-		clickElement(newsLetterSubscribeBtn);
-		waitUntilVisible(newsLetterSubscribeText);
+	    clickElement(newsLetterSubscribeBtn);
+		WaitUtils.waitUntilTextShows(newsLetterSubscribeText, driver, expectedText);
+		return getElementText(newsLetterSubscribeText);
+		
 
-		return  getElementText(newsLetterSubscribeText);
-}
+		}
 
 }

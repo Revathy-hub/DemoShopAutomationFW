@@ -11,4 +11,5 @@ com\demoshop\pageObjects\CheckoutPage.class
 com\demoshop\pageObjects\LoginPage.class
 com\demoshop\pageObjects\Productspage.class
 com\demoshop\pageObjects\RegisterPage.class
+com\demoshop\utils\WaitUtils.class
 com\demoshop\utils\ReportUtil.class

@@ -10,6 +10,8 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 
 import com.demoshop.pageObjects.CartElementsPage;
 import com.demoshop.pageObjects.CheckoutPage;
@@ -23,19 +25,19 @@ public class BaseTest {
 	WebDriver driver= null;
 	public Properties prop;
 	
-   @BeforeMethod()
-	public void initDriver() throws IOException {
-	    prop = TestProperties.getProperties();
-	   System.out.println("In before Method");
-	   String browserName=prop.getProperty("browser");
-	   System.out.println(browserName);
-		getDriver(browserName);
+   @BeforeMethod(alwaysRun=true)
+   @Parameters({"browserName"})
+  	public void initDriver(@Optional String browserName) throws IOException {
+  	    prop = TestProperties.getProperties();
+  	   System.out.println("In before Method");
+  	   if(browserName==null || browserName.isEmpty()) {
+  		 browserName = prop.getProperty("browser"); 
+  	   }
+  	 getDriver(browserName);
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		driver.get(prop.getProperty("qa"));
+		driver.get(prop.getProperty("stg"));
 		initPages();
-		
-	}
+   }
 	
 	public WebDriver getDriver(String browserName) {
 		if(browserName.equalsIgnoreCase("chrome")) {
@@ -66,7 +68,7 @@ public class BaseTest {
 	    checkoutpage=new CheckoutPage(driver);
 	}
 	
-	//@AfterMethod()
+	//@AfterMethod(alwaysRun=true)
 	//public void tearDown() {
 		//driver.quit();
 	//}

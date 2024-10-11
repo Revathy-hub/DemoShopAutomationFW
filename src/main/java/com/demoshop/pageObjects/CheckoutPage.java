@@ -45,12 +45,13 @@ private WebElement BcountinueBtn3;
 @FindBy(css="[onclick=\"PaymentMethod.save()\"]")
 private WebElement BcountinueBtn4;
 
-@FindBy(css=".button-1 payment-info-next-step-button")
+@FindBy(css="[onclick=\"PaymentInfo.save()\"]")
 private WebElement BcountinueBtn5;
 
-@FindBy(css=".button-1 confirm-order-next-step-button")
+@FindBy(css="[onclick=\"ConfirmOrder.save()\"]")
 private WebElement ConfirmBtn;
-@FindBy(css=".title")
+
+@FindBy(xpath="//*[contains(text(),'Your order has been successfully processed!')]")
 private WebElement ConfirmMsg;
 
 public void setBillingData(String country, String city, String address1, String postalcode, String Phonenumber) throws InterruptedException {
@@ -62,10 +63,15 @@ public void setBillingData(String country, String city, String address1, String 
 	clickElement(BcountinueBtn1);
 }
 	public void continueShip() {
-	 
-		clickElement(BcountinueBtn3);
+		waitUntilClickable(BcountinueBtn2);
+	clickElement(BcountinueBtn2);
+	waitUntilClickable(BcountinueBtn3);
+	clickElement(BcountinueBtn3);
+	waitUntilClickable(BcountinueBtn4);
 	clickElement(BcountinueBtn4);
+	waitUntilClickable(BcountinueBtn5);
 	clickElement(BcountinueBtn5);
+	waitUntilClickable(ConfirmBtn);
 	clickElement(ConfirmBtn);
 	
 }
@@ -86,6 +92,7 @@ public void cityselector(String city) {
 }
 
 public String getconfirm() {
+	waitUntilVisible(ConfirmMsg);
 	String msg=getElementText(ConfirmMsg); 
 	return msg;
 }
