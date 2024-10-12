@@ -13,6 +13,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
+import com.demoshop.context.DriverManager;
 import com.demoshop.pageObjects.CartElementsPage;
 import com.demoshop.pageObjects.CheckoutPage;
 import com.demoshop.pageObjects.LoginPage;
@@ -27,20 +28,26 @@ public class BaseTest {
 	
    @BeforeMethod(alwaysRun=true)
    @Parameters({"browserName"})
-  	public void initDriver(@Optional String browserName) throws IOException {
-  	    prop = TestProperties.getProperties();
-  	   System.out.println("In before Method");
-  	   if(browserName==null || browserName.isEmpty()) {
-  		 browserName = prop.getProperty("browser"); 
-  	   }
-  	 getDriver(browserName);
-		driver.manage().window().maximize();
-		driver.get(prop.getProperty("stg"));
+	public void initDriver(@Optional String browserName) throws IOException {
+	    prop = TestProperties.getProperties();
+	   System.out.println("In before Method");
+	   if(browserName==null || browserName.isEmpty()) {
+		 browserName = prop.getProperty("browser"); 
+	   }
+	   
+	   System.out.println(browserName);
+		getDriver(browserName);
+		DriverManager.setDriver(driver);
+		DriverManager.getDriver().manage().window().maximize();
+		DriverManager.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		String url=prop.getProperty(prop.getProperty("environment"));
+		DriverManager.getDriver().get(url);
 		initPages();
-   }
-	
+		
+	}
+
 	public WebDriver getDriver(String browserName) {
-		if(browserName.equalsIgnoreCase("chrome")) {
+		if(browserName.equalsIgnoreCase("Chrome")) {
 			 driver = new ChromeDriver();
 		}
 		else if(browserName.equalsIgnoreCase("edge")) {
@@ -55,6 +62,7 @@ public class BaseTest {
 		return driver;
 	}
 	
+	
 	public  CartElementsPage cartEle;
 	public Productspage productspage; 
 	public LoginPage loginPage;
@@ -68,8 +76,8 @@ public class BaseTest {
 	    checkoutpage=new CheckoutPage(driver);
 	}
 	
-	//@AfterMethod(alwaysRun=true)
-	//public void tearDown() {
-		//driver.quit();
-	//}
+	@AfterMethod(alwaysRun=true)
+	public void tearDown() {
+		DriverManager.getDriver().quit();
+	}
 }

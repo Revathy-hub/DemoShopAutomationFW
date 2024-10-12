@@ -53,8 +53,6 @@ public class E2ECheckoutTest extends BaseTest{
 		Assert.assertTrue(istextMatched2, "Product is not added to cart");
 	
 		cartEle.checkout();
-		//checkoutpage.billingCountryselector("India");
-		//checkoutpage.cityselector("kollam");
 		
 		Faker faker= new Faker();
 		String country= faker.address().country();

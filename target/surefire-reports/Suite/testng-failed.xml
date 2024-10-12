@@ -4,26 +4,15 @@
   <listeners>
     <listener class-name="com.demoshop.Listners.ReportListener"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="Rg DP2(failed)" verbose="0">
+  <test thread-count="5" parallel="tests" name="Subscription Test(failed)" verbose="0">
     <classes>
-      <class name="com.demoshop.tests.RegisterationDP2">
+      <class name="com.demoshop.tests.SubscriptionTest">
         <methods>
+          <include name="verifyUserIsAbleToSubscribeWithValidEmail"/>
           <include name="tearDown"/>
           <include name="initDriver"/>
-          <include name="verifyUserIsAbleToMultipleRegisterUsingCorrectCreds" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.demoshop.tests.RegisterationDP2 -->
+      </class> <!-- com.demoshop.tests.SubscriptionTest -->
     </classes>
-  </test> <!-- Rg DP2(failed) -->
-  <test thread-count="5" parallel="tests" name="E2E Test(failed)" verbose="0">
-    <classes>
-      <class name="com.demoshop.tests.E2ECheckoutTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="verifyNewUserRegistersAndCheckoutProduct"/>
-          <include name="initDriver"/>
-        </methods>
-      </class> <!-- com.demoshop.tests.E2ECheckoutTest -->
-    </classes>
-  </test> <!-- E2E Test(failed) -->
+  </test> <!-- Subscription Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

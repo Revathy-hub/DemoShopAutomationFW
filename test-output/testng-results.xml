@@ -2,15 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-11T11:24:09 IST" name="Default suite" finished-at="2024-10-11T11:24:27 IST" duration-ms="18167">
+  <suite started-at="2024-10-12T11:04:27 IST" name="Default suite" finished-at="2024-10-12T11:05:01 IST" duration-ms="33431">
     <groups>
-      <group name="Smoke">
-        <method signature="E2ECheckoutTest.verifyNewUserRegistersAndCheckoutProduct()[pri:0, instance:com.demoshop.tests.E2ECheckoutTest@6aeb35e6]" name="verifyNewUserRegistersAndCheckoutProduct" class="com.demoshop.tests.E2ECheckoutTest"/>
-      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-10-11T11:24:09 IST" name="Default test" finished-at="2024-10-11T11:24:27 IST" duration-ms="18167">
-      <class name="com.demoshop.tests.E2ECheckoutTest">
-        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.demoshop.tests.E2ECheckoutTest@6aeb35e6]" started-at="2024-10-11T11:24:09 IST" name="initDriver" finished-at="2024-10-11T11:24:14 IST" duration-ms="4583" status="PASS">
+    <test started-at="2024-10-12T11:04:27 IST" name="Default test" finished-at="2024-10-12T11:05:01 IST" duration-ms="33431">
+      <class name="com.demoshop.tests.LoginTest">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.demoshop.tests.LoginTest@f6efaab]" started-at="2024-10-12T11:04:27 IST" name="initDriver" finished-at="2024-10-12T11:04:52 IST" duration-ms="24466" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -19,11 +16,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initDriver -->
-        <test-method signature="verifyNewUserRegistersAndCheckoutProduct()[pri:0, instance:com.demoshop.tests.E2ECheckoutTest@6aeb35e6]" started-at="2024-10-11T11:24:14 IST" name="verifyNewUserRegistersAndCheckoutProduct" finished-at="2024-10-11T11:24:27 IST" duration-ms="13526" status="PASS">
+        <test-method signature="verifyUserIsAbleToLoginWithValidCreds()[pri:0, instance:com.demoshop.tests.LoginTest@f6efaab]" started-at="2024-10-12T11:04:52 IST" name="verifyUserIsAbleToLoginWithValidCreds" finished-at="2024-10-12T11:05:00 IST" duration-ms="8495" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyNewUserRegistersAndCheckoutProduct -->
-      </class> <!-- com.demoshop.tests.E2ECheckoutTest -->
+        </test-method> <!-- verifyUserIsAbleToLoginWithValidCreds -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoshop.tests.LoginTest@f6efaab]" started-at="2024-10-12T11:05:00 IST" name="tearDown" finished-at="2024-10-12T11:05:01 IST" duration-ms="372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demoshop.tests.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

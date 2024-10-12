@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.demoshop.tests.E2ECheckoutTest">
+      <class name="com.demoshop.tests.LoginTest">
         <methods>
-          <include name="verifyNewUserRegistersAndCheckoutProduct"/>
+          <include name="tearDown"/>
+          <include name="verifyUserIsAbleToLoginWithValidCreds"/>
           <include name="initDriver"/>
         </methods>
-      </class> <!-- com.demoshop.tests.E2ECheckoutTest -->
+      </class> <!-- com.demoshop.tests.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

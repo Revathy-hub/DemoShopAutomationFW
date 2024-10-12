@@ -1,5 +1,7 @@
 C:\Users\Administrator\eclipse-workspace\DemoWebShopFrameWork\src\main\java\com\demoshop\context\Constants.java
+C:\Users\Administrator\eclipse-workspace\DemoWebShopFrameWork\src\main\java\com\demoshop\context\DriverManager.java
 C:\Users\Administrator\eclipse-workspace\DemoWebShopFrameWork\src\main\java\com\demoshop\Listners\ReportListener.java
+C:\Users\Administrator\eclipse-workspace\DemoWebShopFrameWork\src\main\java\com\demoshop\model\Person.java
 C:\Users\Administrator\eclipse-workspace\DemoWebShopFrameWork\src\main\java\com\demoshop\pageObjects\CartElementsPage.java
 C:\Users\Administrator\eclipse-workspace\DemoWebShopFrameWork\src\main\java\com\demoshop\pageObjects\CheckoutPage.java
 C:\Users\Administrator\eclipse-workspace\DemoWebShopFrameWork\src\main\java\com\demoshop\pageObjects\LoginPage.java
@@ -12,4 +14,3 @@ C:\Users\Administrator\eclipse-workspace\DemoWebShopFrameWork\src\main\java\com\
 C:\Users\Administrator\eclipse-workspace\DemoWebShopFrameWork\src\main\java\com\demoshop\utils\TestProperties.java
 C:\Users\Administrator\eclipse-workspace\DemoWebShopFrameWork\src\main\java\com\demoshop\utils\UniqueGenerator.java
 C:\Users\Administrator\eclipse-workspace\DemoWebShopFrameWork\src\main\java\com\demoshop\utils\WaitUtils.java
-C:\Users\Administrator\eclipse-workspace\DemoWebShopFrameWork\src\main\java\model\Person.java

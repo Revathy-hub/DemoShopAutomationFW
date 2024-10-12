@@ -10,6 +10,6 @@ public class SubscriptionTest extends BaseTest {
 
 		String actualSubscriptionMsg = loginPage.verifyNewsLetterEmail(UniqueGenerator.getUniqueEmail(), prop.getProperty("subscriptionMsg"));
 		System.out.println(actualSubscriptionMsg );
-		Assert.assertEquals(actualSubscriptionMsg , prop.getProperty("subscriptionMsg"));
+		Assert.assertEquals(actualSubscriptionMsg, prop.getProperty("subscriptionMsg"));
 	}
 }

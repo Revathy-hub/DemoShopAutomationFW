@@ -1,15 +1,24 @@
 package com.demoshop.utils;
+
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.openqa.selenium.By;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.demoshop.context.Constants;
+import com.demoshop.context.DriverManager;
+
 
 public class PageActions {
 	private WebDriver driver;
@@ -55,6 +64,15 @@ public void waitUntilVisible(WebElement element) {
 	public void waitUntilClickable(WebElement element) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(8));
 		wait.until(ExpectedConditions.elementToBeClickable(element));
+	}
+
+	public static String getScreenShot(String testName) throws IOException {
+		TakesScreenshot screenshot = (TakesScreenshot)DriverManager .getDriver();
+		File srcFile = screenshot.getScreenshotAs(OutputType.FILE);
+		String screenshotPath=Constants.WORKINGDIRECTORY+ "\\screenshot\\"+testName+UniqueGenerator.getCurrentDateTime()+".png";
+		File destFile = new File(screenshotPath);
+		FileUtils.moveFile(srcFile, destFile);
+		return screenshotPath;
 	}
 
 }

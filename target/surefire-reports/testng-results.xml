@@ -1,38 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="6" failed="2" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-11T10:26:31 IST" name="Suite" finished-at="2024-10-11T10:26:57 IST" duration-ms="25357">
+  <suite started-at="2024-10-12T11:19:12 IST" name="Suite" finished-at="2024-10-12T11:21:05 IST" duration-ms="113352">
     <groups>
       <group name="Smoke">
-        <method signature="SubscriptionTest.verifyUserIsAbleToSubscribeWithValidEmail()[pri:0, instance:com.demoshop.tests.SubscriptionTest@6f204a1a]" name="verifyUserIsAbleToSubscribeWithValidEmail" class="com.demoshop.tests.SubscriptionTest"/>
-        <method signature="E2ECheckoutTest.verifyNewUserRegistersAndCheckoutProduct()[pri:0, instance:com.demoshop.tests.E2ECheckoutTest@38467116]" name="verifyNewUserRegistersAndCheckoutProduct" class="com.demoshop.tests.E2ECheckoutTest"/>
+        <method signature="SubscriptionTest.verifyUserIsAbleToSubscribeWithValidEmail()[pri:0, instance:com.demoshop.tests.SubscriptionTest@5745ca0e]" name="verifyUserIsAbleToSubscribeWithValidEmail" class="com.demoshop.tests.SubscriptionTest"/>
+        <method signature="E2ECheckoutTest.verifyNewUserRegistersAndCheckoutProduct()[pri:0, instance:com.demoshop.tests.E2ECheckoutTest@5c7933ad]" name="verifyNewUserRegistersAndCheckoutProduct" class="com.demoshop.tests.E2ECheckoutTest"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-10-11T10:26:31 IST" name="Search Test" finished-at="2024-10-11T10:26:41 IST" duration-ms="9955">
-      <class name="com.demoshop.tests.SearchTest">
-        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.demoshop.tests.SearchTest@4b29d1d2]" started-at="2024-10-11T10:26:31 IST" name="initDriver" finished-at="2024-10-11T10:26:39 IST" duration-ms="7371" status="PASS">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initDriver -->
-        <test-method signature="verifyUserIsAbletoSearchDesiredProducts()[pri:0, instance:com.demoshop.tests.SearchTest@4b29d1d2]" started-at="2024-10-11T10:26:39 IST" name="verifyUserIsAbletoSearchDesiredProducts" finished-at="2024-10-11T10:26:41 IST" duration-ms="1935" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserIsAbletoSearchDesiredProducts -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoshop.tests.SearchTest@4b29d1d2]" started-at="2024-10-11T10:26:41 IST" name="tearDown" finished-at="2024-10-11T10:26:41 IST" duration-ms="581" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.demoshop.tests.SearchTest -->
-    </test> <!-- Search Test -->
-    <test started-at="2024-10-11T10:26:31 IST" name="Excel Registeration" finished-at="2024-10-11T10:26:44 IST" duration-ms="12347">
+    <test started-at="2024-10-12T11:19:12 IST" name="Excel Registeration" finished-at="2024-10-12T11:19:55 IST" duration-ms="43030">
       <class name="com.demoshop.tests.ExcelRegisterationTest">
-        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.demoshop.tests.ExcelRegisterationTest@7a5ceedd]" started-at="2024-10-11T10:26:31 IST" name="initDriver" finished-at="2024-10-11T10:26:37 IST" duration-ms="5994" status="PASS">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.demoshop.tests.ExcelRegisterationTest@6cb107fd]" started-at="2024-10-12T11:19:12 IST" name="initDriver" finished-at="2024-10-12T11:19:46 IST" duration-ms="34153" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -41,19 +20,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initDriver -->
-        <test-method signature="verifyUserIsAbleToRegisterUsingCorrectCreds()[pri:0, instance:com.demoshop.tests.ExcelRegisterationTest@7a5ceedd]" started-at="2024-10-11T10:26:37 IST" name="verifyUserIsAbleToRegisterUsingCorrectCreds" finished-at="2024-10-11T10:26:43 IST" duration-ms="6003" status="PASS">
+        <test-method signature="verifyUserIsAbleToRegisterUsingCorrectCreds()[pri:0, instance:com.demoshop.tests.ExcelRegisterationTest@6cb107fd]" started-at="2024-10-12T11:19:46 IST" name="verifyUserIsAbleToRegisterUsingCorrectCreds" finished-at="2024-10-12T11:19:55 IST" duration-ms="8470" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserIsAbleToRegisterUsingCorrectCreds -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoshop.tests.ExcelRegisterationTest@7a5ceedd]" started-at="2024-10-11T10:26:43 IST" name="tearDown" finished-at="2024-10-11T10:26:44 IST" duration-ms="293" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoshop.tests.ExcelRegisterationTest@6cb107fd]" started-at="2024-10-12T11:19:55 IST" name="tearDown" finished-at="2024-10-12T11:19:55 IST" duration-ms="306" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.demoshop.tests.ExcelRegisterationTest -->
     </test> <!-- Excel Registeration -->
-    <test started-at="2024-10-11T10:26:31 IST" name="Registeration Test" finished-at="2024-10-11T10:26:44 IST" duration-ms="12494">
-      <class name="com.demoshop.tests.RegisterationTest">
-        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.demoshop.tests.RegisterationTest@4007f65e]" started-at="2024-10-11T10:26:31 IST" name="initDriver" finished-at="2024-10-11T10:26:39 IST" duration-ms="7582" status="PASS">
+    <test started-at="2024-10-12T11:19:12 IST" name="Search Test" finished-at="2024-10-12T11:20:02 IST" duration-ms="50177">
+      <class name="com.demoshop.tests.SearchTest">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.demoshop.tests.SearchTest@d737b89]" started-at="2024-10-12T11:19:12 IST" name="initDriver" finished-at="2024-10-12T11:19:57 IST" duration-ms="45327" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -62,19 +41,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initDriver -->
-        <test-method signature="verifyUserIsAbleToRegisterUsingCorrectCreds()[pri:0, instance:com.demoshop.tests.RegisterationTest@4007f65e]" started-at="2024-10-11T10:26:39 IST" name="verifyUserIsAbleToRegisterUsingCorrectCreds" finished-at="2024-10-11T10:26:43 IST" duration-ms="4406" status="PASS">
+        <test-method signature="verifyUserIsAbletoSearchDesiredProducts()[pri:0, instance:com.demoshop.tests.SearchTest@d737b89]" started-at="2024-10-12T11:19:57 IST" name="verifyUserIsAbletoSearchDesiredProducts" finished-at="2024-10-12T11:20:02 IST" duration-ms="4513" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUserIsAbleToRegisterUsingCorrectCreds -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoshop.tests.RegisterationTest@4007f65e]" started-at="2024-10-11T10:26:43 IST" name="tearDown" finished-at="2024-10-11T10:26:44 IST" duration-ms="451" status="PASS">
+        </test-method> <!-- verifyUserIsAbletoSearchDesiredProducts -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoshop.tests.SearchTest@d737b89]" started-at="2024-10-12T11:20:02 IST" name="tearDown" finished-at="2024-10-12T11:20:02 IST" duration-ms="256" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.demoshop.tests.RegisterationTest -->
-    </test> <!-- Registeration Test -->
-    <test started-at="2024-10-11T10:26:31 IST" name="DataProviderRegisteration" finished-at="2024-10-11T10:26:44 IST" duration-ms="12581">
+      </class> <!-- com.demoshop.tests.SearchTest -->
+    </test> <!-- Search Test -->
+    <test started-at="2024-10-12T11:19:12 IST" name="DataProviderRegisteration" finished-at="2024-10-12T11:20:05 IST" duration-ms="52717">
       <class name="com.demoshop.tests.RegisterationDP">
-        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.demoshop.tests.RegisterationDP@6f53b8a]" started-at="2024-10-11T10:26:32 IST" name="initDriver" finished-at="2024-10-11T10:26:39 IST" duration-ms="7466" status="PASS">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.demoshop.tests.RegisterationDP@6f01b95f]" started-at="2024-10-12T11:19:12 IST" name="initDriver" finished-at="2024-10-12T11:19:55 IST" duration-ms="42943" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -83,41 +62,41 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initDriver -->
-        <test-method signature="verifyUserIsAbleToMultipleRegisterUsingCorrectCreds(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.demoshop.tests.RegisterationDP@6f53b8a]" started-at="2024-10-11T10:26:39 IST" name="verifyUserIsAbleToMultipleRegisterUsingCorrectCreds" data-provider="getData" finished-at="2024-10-11T10:26:43 IST" duration-ms="4280" status="PASS">
+        <test-method signature="verifyUserIsAbleToMultipleRegisterUsingCorrectCreds(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.demoshop.tests.RegisterationDP@6f01b95f]" started-at="2024-10-12T11:19:55 IST" name="verifyUserIsAbleToMultipleRegisterUsingCorrectCreds" data-provider="getData" finished-at="2024-10-12T11:20:04 IST" duration-ms="8994" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Eddy]]>
+                <![CDATA[Jong]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Zieme]]>
+                <![CDATA[Schulist]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[maryland.vandervort@hotmail.com]]>
+                <![CDATA[jefferson.heller@gmail.com]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[jnzo4lbpv9n64]]>
+                <![CDATA[w3rhjyijvdu1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserIsAbleToMultipleRegisterUsingCorrectCreds -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoshop.tests.RegisterationDP@6f53b8a]" started-at="2024-10-11T10:26:43 IST" name="tearDown" finished-at="2024-10-11T10:26:44 IST" duration-ms="519" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoshop.tests.RegisterationDP@6f01b95f]" started-at="2024-10-12T11:20:04 IST" name="tearDown" finished-at="2024-10-12T11:20:05 IST" duration-ms="299" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.demoshop.tests.RegisterationDP -->
     </test> <!-- DataProviderRegisteration -->
-    <test started-at="2024-10-11T10:26:31 IST" name="Rg DP2" finished-at="2024-10-11T10:26:44 IST" duration-ms="12567">
-      <class name="com.demoshop.tests.RegisterationDP2">
-        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.demoshop.tests.RegisterationDP2@710636b0]" started-at="2024-10-11T10:26:32 IST" name="initDriver" finished-at="2024-10-11T10:26:37 IST" duration-ms="5706" status="PASS">
+    <test started-at="2024-10-12T11:19:12 IST" name="Registeration Test" finished-at="2024-10-12T11:20:05 IST" duration-ms="53358">
+      <class name="com.demoshop.tests.RegisterationTest">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.demoshop.tests.RegisterationTest@5965d37]" started-at="2024-10-12T11:19:12 IST" name="initDriver" finished-at="2024-10-12T11:20:00 IST" duration-ms="47988" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -126,97 +105,47 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initDriver -->
-        <test-method signature="verifyUserIsAbleToMultipleRegisterUsingCorrectCreds(java.util.List)[pri:0, instance:com.demoshop.tests.RegisterationDP2@710636b0]" started-at="2024-10-11T10:26:37 IST" name="verifyUserIsAbleToMultipleRegisterUsingCorrectCreds" data-provider="getData" finished-at="2024-10-11T10:26:43 IST" duration-ms="6065" status="FAIL">
+        <test-method signature="verifyUserIsAbleToRegisterUsingCorrectCreds()[pri:0, instance:com.demoshop.tests.RegisterationTest@5965d37]" started-at="2024-10-12T11:20:00 IST" name="verifyUserIsAbleToRegisterUsingCorrectCreds" finished-at="2024-10-12T11:20:05 IST" duration-ms="5049" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsAbleToRegisterUsingCorrectCreds -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoshop.tests.RegisterationTest@5965d37]" started-at="2024-10-12T11:20:05 IST" name="tearDown" finished-at="2024-10-12T11:20:05 IST" duration-ms="243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demoshop.tests.RegisterationTest -->
+    </test> <!-- Registeration Test -->
+    <test started-at="2024-10-12T11:19:12 IST" name="Rg DP2" finished-at="2024-10-12T11:20:27 IST" duration-ms="75008">
+      <class name="com.demoshop.tests.RegisterationDP2">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.demoshop.tests.RegisterationDP2@4e5ed836]" started-at="2024-10-12T11:19:12 IST" name="initDriver" finished-at="2024-10-12T11:19:57 IST" duration-ms="44404" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method signature="verifyUserIsAbleToMultipleRegisterUsingCorrectCreds(java.util.List)[pri:0, instance:com.demoshop.tests.RegisterationDP2@4e5ed836]" started-at="2024-10-12T11:19:57 IST" name="verifyUserIsAbleToMultipleRegisterUsingCorrectCreds" data-provider="getData" finished-at="2024-10-12T11:20:27 IST" duration-ms="29701" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Person [fName=Roosevelt, lName=King, email=dean.hegmann@hotmail.com, password=x7n3nc90, confirmPassword=x7n3nc90], Person [fName=Orville, lName=Collier, email=cary.kuhlman@yahoo.com, password=x7n3nc90, confirmPassword=x7n3nc90]]]]>
+                <![CDATA[[Person [fName=Stefanie, lName=Braun, email=heike.ledner@gmail.com, password=0ealtufteuti5, confirmPassword=0ealtufteuti5], Person [fName=Irma, lName=Senger, email=raquel.terry@hotmail.com, password=0ealtufteuti5, confirmPassword=0ealtufteuti5]]]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".co-logout"}
-  (Session info: chrome=129.0.6668.90)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.23.1', revision: '656257d8e9'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8854e3be40bb8af23bc3c3d2427108ec, findElement {using=css selector, value=.co-logout}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64811}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64811/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8854e3be40bb8af23bc3c3d2427108ec]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".co-logout"}
-  (Session info: chrome=129.0.6668.90)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.23.1', revision: '656257d8e9'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8854e3be40bb8af23bc3c3d2427108ec, findElement {using=css selector, value=.co-logout}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64811}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64811/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8854e3be40bb8af23bc3c3d2427108ec
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
-at com.demoshop.utils.PageActions.clickElement(PageActions.java:22)
-at com.demoshop.pageObjects.RegisterPage.logout(RegisterPage.java:55)
-at com.demoshop.tests.RegisterationDP2.lambda$verifyUserIsAbleToMultipleRegisterUsingCorrectCreds$0(RegisterationDP2.java:25)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at com.demoshop.tests.RegisterationDP2.verifyUserIsAbleToMultipleRegisterUsingCorrectCreds(RegisterationDP2.java:18)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserIsAbleToMultipleRegisterUsingCorrectCreds -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoshop.tests.RegisterationDP2@710636b0]" started-at="2024-10-11T10:26:43 IST" name="tearDown" finished-at="2024-10-11T10:26:44 IST" duration-ms="424" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoshop.tests.RegisterationDP2@4e5ed836]" started-at="2024-10-12T11:20:27 IST" name="tearDown" finished-at="2024-10-12T11:20:27 IST" duration-ms="356" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.demoshop.tests.RegisterationDP2 -->
     </test> <!-- Rg DP2 -->
-    <test started-at="2024-10-11T10:26:42 IST" name="Login Test" finished-at="2024-10-11T10:26:48 IST" duration-ms="6162">
+    <test started-at="2024-10-12T11:19:56 IST" name="Login Test" finished-at="2024-10-12T11:20:30 IST" duration-ms="34263">
       <class name="com.demoshop.tests.LoginTest">
-        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.demoshop.tests.LoginTest@740fb309]" started-at="2024-10-11T10:26:42 IST" name="initDriver" finished-at="2024-10-11T10:26:44 IST" duration-ms="2424" status="PASS">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.demoshop.tests.LoginTest@239a307b]" started-at="2024-10-12T11:19:56 IST" name="initDriver" finished-at="2024-10-12T11:20:24 IST" duration-ms="27800" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -225,19 +154,19 @@ at java.base/java.lang.Thread.run(Thread.java:842)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initDriver -->
-        <test-method signature="verifyUserIsAbleToLoginWithValidCreds()[pri:0, instance:com.demoshop.tests.LoginTest@740fb309]" started-at="2024-10-11T10:26:44 IST" name="verifyUserIsAbleToLoginWithValidCreds" finished-at="2024-10-11T10:26:48 IST" duration-ms="3564" status="PASS">
+        <test-method signature="verifyUserIsAbleToLoginWithValidCreds()[pri:0, instance:com.demoshop.tests.LoginTest@239a307b]" started-at="2024-10-12T11:20:24 IST" name="verifyUserIsAbleToLoginWithValidCreds" finished-at="2024-10-12T11:20:30 IST" duration-ms="6164" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserIsAbleToLoginWithValidCreds -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoshop.tests.LoginTest@740fb309]" started-at="2024-10-11T10:26:48 IST" name="tearDown" finished-at="2024-10-11T10:26:48 IST" duration-ms="171" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoshop.tests.LoginTest@239a307b]" started-at="2024-10-12T11:20:30 IST" name="tearDown" finished-at="2024-10-12T11:20:30 IST" duration-ms="293" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.demoshop.tests.LoginTest -->
     </test> <!-- Login Test -->
-    <test started-at="2024-10-11T10:26:44 IST" name="Subscription Test" finished-at="2024-10-11T10:26:49 IST" duration-ms="5008">
+    <test started-at="2024-10-12T11:20:02 IST" name="Subscription Test" finished-at="2024-10-12T11:20:33 IST" duration-ms="30593">
       <class name="com.demoshop.tests.SubscriptionTest">
-        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.demoshop.tests.SubscriptionTest@6f204a1a]" started-at="2024-10-11T10:26:44 IST" name="initDriver" finished-at="2024-10-11T10:26:48 IST" duration-ms="3971" status="PASS">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.demoshop.tests.SubscriptionTest@5745ca0e]" started-at="2024-10-12T11:20:02 IST" name="initDriver" finished-at="2024-10-12T11:20:31 IST" duration-ms="28788" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -246,19 +175,19 @@ at java.base/java.lang.Thread.run(Thread.java:842)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initDriver -->
-        <test-method signature="verifyUserIsAbleToSubscribeWithValidEmail()[pri:0, instance:com.demoshop.tests.SubscriptionTest@6f204a1a]" started-at="2024-10-11T10:26:48 IST" name="verifyUserIsAbleToSubscribeWithValidEmail" finished-at="2024-10-11T10:26:48 IST" duration-ms="864" status="PASS">
+        <test-method signature="verifyUserIsAbleToSubscribeWithValidEmail()[pri:0, instance:com.demoshop.tests.SubscriptionTest@5745ca0e]" started-at="2024-10-12T11:20:31 IST" name="verifyUserIsAbleToSubscribeWithValidEmail" finished-at="2024-10-12T11:20:32 IST" duration-ms="1497" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserIsAbleToSubscribeWithValidEmail -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoshop.tests.SubscriptionTest@6f204a1a]" started-at="2024-10-11T10:26:48 IST" name="tearDown" finished-at="2024-10-11T10:26:49 IST" duration-ms="167" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoshop.tests.SubscriptionTest@5745ca0e]" started-at="2024-10-12T11:20:32 IST" name="tearDown" finished-at="2024-10-12T11:20:33 IST" duration-ms="300" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.demoshop.tests.SubscriptionTest -->
     </test> <!-- Subscription Test -->
-    <test started-at="2024-10-11T10:26:44 IST" name="E2E Test" finished-at="2024-10-11T10:26:57 IST" duration-ms="12841">
+    <test started-at="2024-10-12T11:20:05 IST" name="E2E Test" finished-at="2024-10-12T11:21:05 IST" duration-ms="60603">
       <class name="com.demoshop.tests.E2ECheckoutTest">
-        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.demoshop.tests.E2ECheckoutTest@38467116]" started-at="2024-10-11T10:26:44 IST" name="initDriver" finished-at="2024-10-11T10:26:48 IST" duration-ms="4144" status="PASS">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.demoshop.tests.E2ECheckoutTest@5c7933ad]" started-at="2024-10-12T11:20:05 IST" name="initDriver" finished-at="2024-10-12T11:20:35 IST" duration-ms="30254" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -267,80 +196,11 @@ at java.base/java.lang.Thread.run(Thread.java:842)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initDriver -->
-        <test-method signature="verifyNewUserRegistersAndCheckoutProduct()[pri:0, instance:com.demoshop.tests.E2ECheckoutTest@38467116]" started-at="2024-10-11T10:26:48 IST" name="verifyNewUserRegistersAndCheckoutProduct" finished-at="2024-10-11T10:26:56 IST" duration-ms="8468" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
-            <message>
-              <![CDATA[element not interactable
-  (Session info: chrome=129.0.6668.90)
-Build info: version: '4.23.1', revision: '656257d8e9'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6ae791e1545a190f8841e394a4f62ba4, clickElement {id=f.F37B8B202C477282D55E3E2F32323410.d.EA102C1AF27AC25C3B7F9D832DC359A5.e.199}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59822}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59822/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (6ae791e1545a190f8841e394a4f62ba4)] -> css selector: [onclick="ShippingMethod.save()"]]
-Session ID: 6ae791e1545a190f8841e394a4f62ba4]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=129.0.6668.90)
-Build info: version: '4.23.1', revision: '656257d8e9'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6ae791e1545a190f8841e394a4f62ba4, clickElement {id=f.F37B8B202C477282D55E3E2F32323410.d.EA102C1AF27AC25C3B7F9D832DC359A5.e.199}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59822}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59822/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (6ae791e1545a190f8841e394a4f62ba4)] -> css selector: [onclick="ShippingMethod.save()"]]
-Session ID: 6ae791e1545a190f8841e394a4f62ba4
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at jdk.internal.reflect.GeneratedMethodAccessor44.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
-at com.demoshop.utils.PageActions.clickElement(PageActions.java:22)
-at com.demoshop.pageObjects.CheckoutPage.continueShip(CheckoutPage.java:66)
-at com.demoshop.tests.E2ECheckoutTest.verifyNewUserRegistersAndCheckoutProduct(E2ECheckoutTest.java:67)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+        <test-method signature="verifyNewUserRegistersAndCheckoutProduct()[pri:0, instance:com.demoshop.tests.E2ECheckoutTest@5c7933ad]" started-at="2024-10-12T11:20:35 IST" name="verifyNewUserRegistersAndCheckoutProduct" finished-at="2024-10-12T11:21:05 IST" duration-ms="29976" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNewUserRegistersAndCheckoutProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoshop.tests.E2ECheckoutTest@38467116]" started-at="2024-10-11T10:26:56 IST" name="tearDown" finished-at="2024-10-11T10:26:57 IST" duration-ms="213" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoshop.tests.E2ECheckoutTest@5c7933ad]" started-at="2024-10-12T11:21:05 IST" name="tearDown" finished-at="2024-10-12T11:21:05 IST" duration-ms="369" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
